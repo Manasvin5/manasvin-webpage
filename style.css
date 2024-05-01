@@ -1,0 +1,124 @@
+* {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: rgba(193, 252, 106, 0.822);
+    margin: 0px 0px;
+
+}
+
+body {
+
+    background-color: rgb(28, 28, 28);
+
+}
+
+h1,
+h2 {
+    color: rgb(252, 140, 196);
+    padding: 1%;
+}
+
+h3,
+h4,
+h6 {
+    color: chartreuse;
+    padding: 1%;
+}
+
+
+
+p {
+    margin-top: 1.2%;
+}
+
+
+#poem {
+    max-width: 25%;
+    margin: 0 auto;
+    padding: 5vw;
+    line-height: 1.5;
+}
+
+/* poem  smaller screens */
+@media only screen and (max-width: 600px) {
+    #poem {
+        padding: 3vw;
+    }
+}
+
+.box {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(28, 28, 28);
+    border-radius: 40px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: rgb(249, 156, 57) solid 5px;
+
+}
+
+.icon {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.desc {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(11, 26, 0, 0.8);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.box:hover .desc {
+    display: block;
+}
+
+.hobbies {
+    border: 3px rgb(255, 94, 188) solid;
+    max-width: max-content;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0.3%;
+    padding-bottom: 1%;
+
+}
+
+.stuff {
+    display: flexbox;
+}
+
+.photo {
+    display: flex;
+    height: 450px
+    
+}
+
+.photo img {
+    flex: 1;
+    
+    max-width: 100%;
+    
+    height: auto;
+    
+    object-fit: contain;
+    border: 3px solid rgb(252, 202, 62);
+    
+}
